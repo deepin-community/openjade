@@ -1,0 +1,23 @@
+STRINGTABLE
+BEGIN
+  2000, "%1 version %2"
+  2001, "no DSSSL specification: use -d to specify"
+  2002, "no applicable processing instruction with title %1; available titles: %2"
+  2003, "Options with a ""doc-""/""spec-"" prefix apply only to the document/specification."
+  2004, "Enable experimental DSSSL extensions."
+  2005, "Debug mode."
+  2006, "Use DSSSL specification %1."
+  2007, "Use DSSSL specification with title %1."
+  2008, "Pretend that %1 appeared in the specification."
+  2009, "Strict DSSSL compliance mode."
+  2010, "Show open entities in error messages."
+  2011, "Show open elements in error messages."
+  2012, "Show error numbers in error messages."
+  2013, "Show references in error messages."
+  2014, "Define parameter entity %1 as ""INCLUDE""."
+  2015, "Enable warning %1."
+  2016, "SYSID"
+  2017, "DEFINITION"
+  2018, "NAME"
+  2019, "TYPE"
+END

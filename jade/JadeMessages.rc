@@ -1,0 +1,10 @@
+STRINGTABLE
+BEGIN
+  1000, "unknown output type %1"
+  1001, "empty output filename"
+  1002, "cannot open output file %1 (%2)"
+  1003, "Use the backend %1."
+  1004, "Send output to %1."
+  1005, "FILE"
+  1006, "TYPE"
+END

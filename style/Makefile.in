@@ -1,0 +1,508 @@
+# Makefile.in generated automatically by automake 1.4 from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = ..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@ $(AM_INSTALL_PROGRAM_FLAGS)
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+host_alias = @host_alias@
+host_triplet = @host@
+AS = @AS@
+CATALOGS = @CATALOGS@
+CATOBJEXT = @CATOBJEXT@
+CC = @CC@
+CPP = @CPP@
+CXX = @CXX@
+CXXCPP = @CXXCPP@
+DATADIRNAME = @DATADIRNAME@
+DLLTOOL = @DLLTOOL@
+GENCAT = @GENCAT@
+GMOFILES = @GMOFILES@
+GMSGFMT = @GMSGFMT@
+GT_NO = @GT_NO@
+GT_YES = @GT_YES@
+INCLUDE_LOCALE_H = @INCLUDE_LOCALE_H@
+INSTOBJEXT = @INSTOBJEXT@
+INTLDEPS = @INTLDEPS@
+INTLLIBS = @INTLLIBS@
+INTLOBJS = @INTLOBJS@
+LIBOBJS = @LIBOBJS@
+LIBTOOL = @LIBTOOL@
+LN_S = @LN_S@
+MAKEINFO = @MAKEINFO@
+MKINSTALLDIRS = @MKINSTALLDIRS@
+MSGFMT = @MSGFMT@
+OBJDUMP = @OBJDUMP@
+OPENJADE_MESSAGE_DOMAIN = @OPENJADE_MESSAGE_DOMAIN@
+PACKAGE = @PACKAGE@
+PERL = @PERL@
+POFILES = @POFILES@
+POSUB = @POSUB@
+RANLIB = @RANLIB@
+USE_INCLUDED_LIBINTL = @USE_INCLUDED_LIBINTL@
+USE_NLS = @USE_NLS@
+VERSION = @VERSION@
+l = @l@
+
+lib_LTLIBRARIES = libostyle.la
+
+libostyle_la_LDFLAGS = -version-info 0:0:0
+
+libostyle_la_SOURCES = Collector.cxx Collector.h DssslApp.cxx 	DssslApp.h DssslAppMessages.h DssslSpecEventHandler.cxx 	DssslSpecEventHandler.h ELObj.cxx ELObj.h ELObjMessageArg.cxx 	ELObjMessageArg.h ELObjPropVal.h EvalContext.h Expression.cxx 	Expression.h FOTBuilder.cxx FOTBuilder.h FlowObj.cxx 	GroveManager.cxx GroveManager.h InheritedC.cxx Insn.cxx Insn.h 	Insn2.h Interpreter.cxx Interpreter.h InterpreterMessages.cxx 	InterpreterMessages.h LangObj.cxx LangObj.h MacroFlowObj.cxx 	MacroFlowObj.h NumberCache.cxx NumberCache.h Pattern.cxx Pattern.h 	ProcessContext.cxx ProcessContext.h ProcessingMode.cxx 	ProcessingMode.h SchemeParser.cxx SchemeParser.h SosofoObj.h 	Style.cxx Style.h StyleEngine.cxx StyleEngine.h VM.h charNames.h 	charProps.h dsssl_ns.h primitive.cxx primitive.h 	sdata.h style_inst.cxx style_pch.h stylelib.cxx 	stylelib.h TransformationMode.h TransformationMode.cxx 	DocumentGenerator.h DocumentGenerator.cxx
+
+
+# We install the headers needed to create a new application based on
+# the DssslApp class.
+pkginclude_HEADERS = FOTBuilder.h dsssl_ns.h DssslApp.h GroveManager.h
+
+INCLUDES = -I$(top_srcdir)/grove -I$(top_srcdir)/spgrove
+
+EXTRA_DIST = FlowObj_inst.cxx primitive_inst.cxx 	style_inst.m4 FlowObj_inst.m4 primitive_inst.m4 	InterpreterMessages.msg InterpreterMessages.rc 	DssslAppMessages.msg DssslAppMessages.rc 	style.dsp 
+
+
+BUILT_SOURCES = style_inst.cxx FlowObj_inst.cxx primitive_inst.cxx 	InterpreterMessages.h InterpreterMessages.cxx 	InterpreterMessages.rc DssslAppMessages.h DssslAppMessages.rc 
+
+
+MSGGENFLAGS = -l xModule 
+
+SUFFIXES = .m4 .msg .rc
+mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
+CONFIG_HEADER = ../config.h
+CONFIG_CLEAN_FILES = 
+LTLIBRARIES =  $(lib_LTLIBRARIES)
+
+
+DEFS = @DEFS@ -I. -I$(srcdir) -I..
+CPPFLAGS = @CPPFLAGS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+libostyle_la_LIBADD = 
+libostyle_la_OBJECTS =  Collector.lo DssslApp.lo \
+DssslSpecEventHandler.lo ELObj.lo ELObjMessageArg.lo Expression.lo \
+FOTBuilder.lo FlowObj.lo GroveManager.lo InheritedC.lo Insn.lo \
+Interpreter.lo InterpreterMessages.lo LangObj.lo MacroFlowObj.lo \
+NumberCache.lo Pattern.lo ProcessContext.lo ProcessingMode.lo \
+SchemeParser.lo Style.lo StyleEngine.lo primitive.lo style_inst.lo \
+stylelib.lo TransformationMode.lo DocumentGenerator.lo
+CXXFLAGS = @CXXFLAGS@
+CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+LTCXXCOMPILE = $(LIBTOOL) --mode=compile $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+CXXLD = $(CXX)
+CXXLINK = $(LIBTOOL) --mode=link $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(LDFLAGS) -o $@
+CFLAGS = @CFLAGS@
+COMPILE = $(CC) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+LTCOMPILE = $(LIBTOOL) --mode=compile $(CC) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+CCLD = $(CC)
+LINK = $(LIBTOOL) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(LDFLAGS) -o $@
+HEADERS =  $(pkginclude_HEADERS)
+
+DIST_COMMON =  Makefile.am Makefile.in
+
+
+DISTFILES = $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST)
+
+TAR = gtar
+GZIP_ENV = --best
+SOURCES = $(libostyle_la_SOURCES)
+OBJECTS = $(libostyle_la_OBJECTS)
+
+all: all-redirect
+.SUFFIXES:
+.SUFFIXES: .S .c .cxx .lo .m4 .msg .o .rc .s
+$(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
+	cd $(top_srcdir) && $(AUTOMAKE) --gnu --include-deps style/Makefile
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) \
+	  && CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+
+mostlyclean-libLTLIBRARIES:
+
+clean-libLTLIBRARIES:
+	-test -z "$(lib_LTLIBRARIES)" || rm -f $(lib_LTLIBRARIES)
+
+distclean-libLTLIBRARIES:
+
+maintainer-clean-libLTLIBRARIES:
+
+install-libLTLIBRARIES: $(lib_LTLIBRARIES)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(libdir)
+	@list='$(lib_LTLIBRARIES)'; for p in $$list; do \
+	  if test -f $$p; then \
+	    echo "$(LIBTOOL)  --mode=install $(INSTALL) $$p $(DESTDIR)$(libdir)/$$p"; \
+	    $(LIBTOOL)  --mode=install $(INSTALL) $$p $(DESTDIR)$(libdir)/$$p; \
+	  else :; fi; \
+	done
+
+uninstall-libLTLIBRARIES:
+	@$(NORMAL_UNINSTALL)
+	list='$(lib_LTLIBRARIES)'; for p in $$list; do \
+	  $(LIBTOOL)  --mode=uninstall rm -f $(DESTDIR)$(libdir)/$$p; \
+	done
+
+.c.o:
+	$(COMPILE) -c $<
+
+.s.o:
+	$(COMPILE) -c $<
+
+.S.o:
+	$(COMPILE) -c $<
+
+mostlyclean-compile:
+	-rm -f *.o core *.core
+
+clean-compile:
+
+distclean-compile:
+	-rm -f *.tab.c
+
+maintainer-clean-compile:
+
+.c.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.s.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.S.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+
+maintainer-clean-libtool:
+
+libostyle.la: $(libostyle_la_OBJECTS) $(libostyle_la_DEPENDENCIES)
+	$(CXXLINK) -rpath $(libdir) $(libostyle_la_LDFLAGS) $(libostyle_la_OBJECTS) $(libostyle_la_LIBADD) $(LIBS)
+.cxx.o:
+	$(CXXCOMPILE) -c $<
+.cxx.lo:
+	$(LTCXXCOMPILE) -c $<
+
+install-pkgincludeHEADERS: $(pkginclude_HEADERS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(pkgincludedir)
+	@list='$(pkginclude_HEADERS)'; for p in $$list; do \
+	  if test -f "$$p"; then d= ; else d="$(srcdir)/"; fi; \
+	  echo " $(INSTALL_DATA) $$d$$p $(DESTDIR)$(pkgincludedir)/$$p"; \
+	  $(INSTALL_DATA) $$d$$p $(DESTDIR)$(pkgincludedir)/$$p; \
+	done
+
+uninstall-pkgincludeHEADERS:
+	@$(NORMAL_UNINSTALL)
+	list='$(pkginclude_HEADERS)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(pkgincludedir)/$$p; \
+	done
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP)
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	here=`pwd` && cd $(srcdir) \
+	  && mkid -f$$here/ID $$unique $(LISP)
+
+TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || (cd $(srcdir) && etags $(ETAGS_ARGS) $$tags  $$unique $(LISP) -o $$here/TAGS)
+
+mostlyclean-tags:
+
+clean-tags:
+
+distclean-tags:
+	-rm -f TAGS ID
+
+maintainer-clean-tags:
+
+distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
+
+subdir = style
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	  d=$(srcdir); \
+	  if test -d $$d/$$file; then \
+	    cp -pr $$d/$$file $(distdir)/$$file; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	    || cp -p $$d/$$file $(distdir)/$$file || :; \
+	  fi; \
+	done
+Collector.lo Collector.o : Collector.cxx ../config.h Collector.h
+DocumentGenerator.lo DocumentGenerator.o : DocumentGenerator.cxx \
+	stylelib.h ../config.h dsssl_ns.h DocumentGenerator.h \
+	../grove/Node.h
+DssslApp.lo DssslApp.o : DssslApp.cxx stylelib.h ../config.h dsssl_ns.h \
+	DssslApp.h ../spgrove/GroveApp.h ../spgrove/GroveBuilder.h \
+	../grove/Node.h FOTBuilder.h GroveManager.h DssslAppMessages.h \
+	StyleEngine.h ../grove/LocNode.h ../spgrove/SdNode.h
+DssslSpecEventHandler.lo DssslSpecEventHandler.o : \
+	DssslSpecEventHandler.cxx stylelib.h ../config.h dsssl_ns.h \
+	DssslSpecEventHandler.h InterpreterMessages.h FOTBuilder.h \
+	../grove/Node.h
+ELObj.lo ELObj.o : ELObj.cxx stylelib.h ../config.h dsssl_ns.h ELObj.h \
+	Collector.h ../grove/Node.h FOTBuilder.h EvalContext.h \
+	Interpreter.h Expression.h Insn.h Style.h ProcessingMode.h \
+	Pattern.h SosofoObj.h NumberCache.h GroveManager.h \
+	TransformationMode.h InterpreterMessages.h
+ELObjMessageArg.lo ELObjMessageArg.o : ELObjMessageArg.cxx stylelib.h \
+	../config.h dsssl_ns.h ELObjMessageArg.h ELObj.h Collector.h \
+	../grove/Node.h FOTBuilder.h Interpreter.h Expression.h Insn.h \
+	Style.h ProcessingMode.h Pattern.h SosofoObj.h NumberCache.h \
+	GroveManager.h TransformationMode.h
+Expression.lo Expression.o : Expression.cxx stylelib.h ../config.h \
+	dsssl_ns.h Insn.h ELObj.h Collector.h ../grove/Node.h \
+	FOTBuilder.h Insn2.h SosofoObj.h Style.h ProcessingMode.h \
+	Expression.h Pattern.h Interpreter.h NumberCache.h \
+	GroveManager.h TransformationMode.h InterpreterMessages.h \
+	ELObjMessageArg.h
+FOTBuilder.lo FOTBuilder.o : FOTBuilder.cxx stylelib.h ../config.h \
+	dsssl_ns.h FOTBuilder.h ../grove/Node.h
+FlowObj.lo FlowObj.o : FlowObj.cxx stylelib.h ../config.h dsssl_ns.h \
+	ProcessContext.h Collector.h Style.h ELObj.h ../grove/Node.h \
+	FOTBuilder.h Insn.h ProcessingMode.h Expression.h Pattern.h \
+	SosofoObj.h VM.h EvalContext.h Interpreter.h NumberCache.h \
+	GroveManager.h TransformationMode.h InterpreterMessages.h \
+	ELObjMessageArg.h FlowObj_inst.cxx
+GroveManager.lo GroveManager.o : GroveManager.cxx stylelib.h ../config.h \
+	dsssl_ns.h GroveManager.h ../grove/Node.h FOTBuilder.h
+InheritedC.lo InheritedC.o : InheritedC.cxx stylelib.h ../config.h \
+	dsssl_ns.h Style.h ELObj.h Collector.h ../grove/Node.h \
+	FOTBuilder.h Insn.h ProcessingMode.h Expression.h Pattern.h \
+	VM.h EvalContext.h Interpreter.h SosofoObj.h NumberCache.h \
+	GroveManager.h TransformationMode.h InterpreterMessages.h
+Insn.lo Insn.o : Insn.cxx stylelib.h ../config.h dsssl_ns.h VM.h \
+	Collector.h EvalContext.h ../grove/Node.h Insn.h ELObj.h \
+	FOTBuilder.h Interpreter.h Expression.h Style.h \
+	ProcessingMode.h Pattern.h SosofoObj.h NumberCache.h \
+	GroveManager.h TransformationMode.h InterpreterMessages.h \
+	ELObjMessageArg.h Insn2.h ELObjPropVal.h
+Interpreter.lo Interpreter.o : Interpreter.cxx stylelib.h ../config.h \
+	dsssl_ns.h Interpreter.h ELObj.h Collector.h ../grove/Node.h \
+	FOTBuilder.h Expression.h Insn.h Style.h ProcessingMode.h \
+	Pattern.h SosofoObj.h NumberCache.h GroveManager.h \
+	TransformationMode.h InterpreterMessages.h ../grove/LocNode.h \
+	MacroFlowObj.h ELObjMessageArg.h VM.h EvalContext.h \
+	SchemeParser.h LangObj.h charNames.h sdata.h charProps.h
+InterpreterMessages.lo InterpreterMessages.o : InterpreterMessages.cxx \
+	stylelib.h ../config.h dsssl_ns.h InterpreterMessages.h
+LangObj.lo LangObj.o : LangObj.cxx stylelib.h ../config.h dsssl_ns.h \
+	LangObj.h ELObj.h Collector.h ../grove/Node.h FOTBuilder.h
+MacroFlowObj.lo MacroFlowObj.o : MacroFlowObj.cxx stylelib.h ../config.h \
+	dsssl_ns.h MacroFlowObj.h SosofoObj.h ELObj.h Collector.h \
+	../grove/Node.h FOTBuilder.h Insn.h Expression.h VM.h \
+	EvalContext.h Insn2.h Style.h ProcessingMode.h Pattern.h \
+	Interpreter.h NumberCache.h GroveManager.h TransformationMode.h \
+	ProcessContext.h
+NumberCache.lo NumberCache.o : NumberCache.cxx stylelib.h ../config.h \
+	dsssl_ns.h NumberCache.h ../grove/Node.h
+Pattern.lo Pattern.o : Pattern.cxx stylelib.h ../config.h dsssl_ns.h \
+	Pattern.h ../grove/Node.h Interpreter.h ELObj.h Collector.h \
+	FOTBuilder.h Expression.h Insn.h Style.h ProcessingMode.h \
+	SosofoObj.h NumberCache.h GroveManager.h TransformationMode.h
+ProcessContext.lo ProcessContext.o : ProcessContext.cxx stylelib.h \
+	../config.h dsssl_ns.h ProcessContext.h Collector.h Style.h \
+	ELObj.h ../grove/Node.h FOTBuilder.h Insn.h ProcessingMode.h \
+	Expression.h Pattern.h SosofoObj.h VM.h EvalContext.h \
+	Interpreter.h NumberCache.h GroveManager.h TransformationMode.h \
+	InterpreterMessages.h
+ProcessingMode.lo ProcessingMode.o : ProcessingMode.cxx stylelib.h \
+	../config.h dsssl_ns.h ProcessingMode.h Expression.h ELObj.h \
+	Collector.h ../grove/Node.h FOTBuilder.h Insn.h Pattern.h \
+	Interpreter.h Style.h SosofoObj.h NumberCache.h GroveManager.h \
+	TransformationMode.h InterpreterMessages.h Insn2.h VM.h \
+	EvalContext.h ../grove/LocNode.h
+SchemeParser.lo SchemeParser.o : SchemeParser.cxx stylelib.h ../config.h \
+	dsssl_ns.h SchemeParser.h Interpreter.h ELObj.h Collector.h \
+	../grove/Node.h FOTBuilder.h Expression.h Insn.h Style.h \
+	ProcessingMode.h Pattern.h SosofoObj.h NumberCache.h \
+	GroveManager.h TransformationMode.h InterpreterMessages.h \
+	MacroFlowObj.h LangObj.h VM.h EvalContext.h ELObjMessageArg.h \
+	DssslSpecEventHandler.h
+Style.lo Style.o : Style.cxx stylelib.h ../config.h dsssl_ns.h Style.h \
+	ELObj.h Collector.h ../grove/Node.h FOTBuilder.h Insn.h \
+	ProcessingMode.h Expression.h Pattern.h VM.h EvalContext.h \
+	Interpreter.h SosofoObj.h NumberCache.h GroveManager.h \
+	TransformationMode.h InterpreterMessages.h
+StyleEngine.lo StyleEngine.o : StyleEngine.cxx stylelib.h ../config.h \
+	dsssl_ns.h StyleEngine.h ../grove/Node.h FOTBuilder.h \
+	GroveManager.h Interpreter.h ELObj.h Collector.h Expression.h \
+	Insn.h Style.h ProcessingMode.h Pattern.h SosofoObj.h \
+	NumberCache.h TransformationMode.h InterpreterMessages.h \
+	SchemeParser.h DssslSpecEventHandler.h ProcessContext.h VM.h \
+	EvalContext.h DocumentGenerator.h
+TransformationMode.lo TransformationMode.o : TransformationMode.cxx \
+	stylelib.h ../config.h dsssl_ns.h TransformationMode.h Insn.h \
+	ELObj.h Collector.h ../grove/Node.h FOTBuilder.h Expression.h \
+	Interpreter.h Style.h ProcessingMode.h Pattern.h SosofoObj.h \
+	NumberCache.h GroveManager.h InterpreterMessages.h \
+	ELObjMessageArg.h VM.h EvalContext.h
+primitive.lo primitive.o : primitive.cxx stylelib.h ../config.h \
+	dsssl_ns.h Interpreter.h ELObj.h Collector.h ../grove/Node.h \
+	FOTBuilder.h Expression.h Insn.h Style.h ProcessingMode.h \
+	Pattern.h SosofoObj.h NumberCache.h GroveManager.h \
+	TransformationMode.h InterpreterMessages.h EvalContext.h \
+	ELObjMessageArg.h ../grove/LocNode.h VM.h ELObjPropVal.h \
+	LangObj.h primitive.h primitive_inst.cxx
+style_inst.lo style_inst.o : style_inst.cxx stylelib.h ../config.h \
+	dsssl_ns.h
+stylelib.lo stylelib.o : stylelib.cxx stylelib.h ../config.h dsssl_ns.h
+
+info-am:
+info: info-am
+dvi-am:
+dvi: dvi-am
+check-am: all-am
+check: check-am
+installcheck-am:
+installcheck: installcheck-am
+install-exec-am: install-libLTLIBRARIES
+install-exec: install-exec-am
+
+install-data-am: install-pkgincludeHEADERS
+install-data: install-data-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-am
+uninstall-am: uninstall-libLTLIBRARIES uninstall-pkgincludeHEADERS
+uninstall: uninstall-am
+all-am: Makefile $(LTLIBRARIES) $(HEADERS)
+all-redirect: all-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) AM_INSTALL_PROGRAM_FLAGS=-s install
+installdirs:
+	$(mkinstalldirs)  $(DESTDIR)$(libdir) $(DESTDIR)$(pkgincludedir)
+
+
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+	-test -z "$(BUILT_SOURCES)" || rm -f $(BUILT_SOURCES)
+mostlyclean-am:  mostlyclean-libLTLIBRARIES mostlyclean-compile \
+		mostlyclean-libtool mostlyclean-tags \
+		mostlyclean-generic
+
+mostlyclean: mostlyclean-am
+
+clean-am:  clean-libLTLIBRARIES clean-compile clean-libtool clean-tags \
+		clean-generic mostlyclean-am
+
+clean: clean-am
+
+distclean-am:  distclean-libLTLIBRARIES distclean-compile \
+		distclean-libtool distclean-tags distclean-generic \
+		clean-am
+	-rm -f libtool
+
+distclean: distclean-am
+
+maintainer-clean-am:  maintainer-clean-libLTLIBRARIES \
+		maintainer-clean-compile maintainer-clean-libtool \
+		maintainer-clean-tags maintainer-clean-generic \
+		distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-am
+
+.PHONY: mostlyclean-libLTLIBRARIES distclean-libLTLIBRARIES \
+clean-libLTLIBRARIES maintainer-clean-libLTLIBRARIES \
+uninstall-libLTLIBRARIES install-libLTLIBRARIES mostlyclean-compile \
+distclean-compile clean-compile maintainer-clean-compile \
+mostlyclean-libtool distclean-libtool clean-libtool \
+maintainer-clean-libtool uninstall-pkgincludeHEADERS \
+install-pkgincludeHEADERS tags mostlyclean-tags distclean-tags \
+clean-tags maintainer-clean-tags distdir info-am info dvi-am dvi check \
+check-am installcheck-am installcheck install-exec-am install-exec \
+install-data-am install-data install-am install uninstall-am uninstall \
+all-redirect all-am all installdirs mostlyclean-generic \
+distclean-generic clean-generic maintainer-clean-generic clean \
+mostlyclean distclean maintainer-clean
+
+
+.m4.cxx:
+	$(PERL) $(top_srcdir)/instmac.pl $< >$@
+
+%.h %.cxx %.rc: %.msg
+	$(PERL) -w $(top_builddir)/msggen.pl $(MSGGENFLAGS) $<
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:
